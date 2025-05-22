@@ -5,7 +5,7 @@ return [
 
     'allowed_methods' => ['*'],
 
-    'allowed_origins' => ['http://localhost:5173'],
+    'allowed_origins' => ['http://localhost:5173','https://elaborate-zabaione-974fd0.netlify.app'], // ou remplace par ['https://ton-front.netlify.app'] si tu veux sécuriser
 
     'allowed_origins_patterns' => [],
 
@@ -15,7 +15,8 @@ return [
 
     'max_age' => 0,
 
-    'supports_credentials' => true,
+    'supports_credentials' => false,
 
 ];
+
 

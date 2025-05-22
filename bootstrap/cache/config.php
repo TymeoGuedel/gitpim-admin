@@ -7,14 +7,14 @@
   array (
     'name' => 'Laravel',
     'env' => 'production',
-    'debug' => true,
+    'debug' => false,
     'url' => 'https://gitpim-admin-production.up.railway.app',
     'frontend_url' => 'http://localhost:3000',
     'asset_url' => NULL,
     'timezone' => 'UTC',
-    'locale' => 'fr',
-    'fallback_locale' => 'fr',
-    'faker_locale' => 'fr_FR',
+    'locale' => 'en',
+    'fallback_locale' => 'en',
+    'faker_locale' => 'en_US',
     'cipher' => 'AES-256-CBC',
     'key' => 'base64:gzqohQPO7BkvQJP4ncnT0a+EiggXN6ee7HGlIDgkjpg=',
     'previous_keys' => 
@@ -191,8 +191,8 @@
       'dynamodb' => 
       array (
         'driver' => 'dynamodb',
-        'key' => '',
-        'secret' => '',
+        'key' => NULL,
+        'secret' => NULL,
         'region' => 'us-east-1',
         'table' => 'cache',
         'endpoint' => NULL,
@@ -220,6 +220,7 @@
     'allowed_origins' => 
     array (
       0 => 'http://localhost:5173',
+      1 => 'https://elaborate-zabaione-974fd0.netlify.app',
     ),
     'allowed_origins_patterns' => 
     array (
@@ -232,7 +233,7 @@
     array (
     ),
     'max_age' => 0,
-    'supports_credentials' => true,
+    'supports_credentials' => false,
   ),
   'database' => 
   array (
@@ -258,7 +259,7 @@
         'port' => '35615',
         'database' => 'railway',
         'username' => 'root',
-        'password' => 'NTAPJnhDSLuTnkBRtcZIpXEaDhVTVfgA',
+        'password' => 'NTAPJnhDSLuTnkBRtcZIpXEaDhVTvfgA',
         'unix_socket' => '',
         'charset' => 'utf8mb4',
         'collation' => 'utf8mb4_unicode_ci',
@@ -278,7 +279,7 @@
         'port' => '35615',
         'database' => 'railway',
         'username' => 'root',
-        'password' => 'NTAPJnhDSLuTnkBRtcZIpXEaDhVTVfgA',
+        'password' => 'NTAPJnhDSLuTnkBRtcZIpXEaDhVTvfgA',
         'unix_socket' => '',
         'charset' => 'utf8mb4',
         'collation' => 'utf8mb4_unicode_ci',
@@ -298,7 +299,7 @@
         'port' => '35615',
         'database' => 'railway',
         'username' => 'root',
-        'password' => 'NTAPJnhDSLuTnkBRtcZIpXEaDhVTVfgA',
+        'password' => 'NTAPJnhDSLuTnkBRtcZIpXEaDhVTvfgA',
         'charset' => 'utf8',
         'prefix' => '',
         'prefix_indexes' => true,
@@ -313,7 +314,7 @@
         'port' => '35615',
         'database' => 'railway',
         'username' => 'root',
-        'password' => 'NTAPJnhDSLuTnkBRtcZIpXEaDhVTVfgA',
+        'password' => 'NTAPJnhDSLuTnkBRtcZIpXEaDhVTvfgA',
         'charset' => 'utf8',
         'prefix' => '',
         'prefix_indexes' => true,
@@ -378,10 +379,10 @@
       's3' => 
       array (
         'driver' => 's3',
-        'key' => '',
-        'secret' => '',
-        'region' => 'us-east-1',
-        'bucket' => '',
+        'key' => NULL,
+        'secret' => NULL,
+        'region' => NULL,
+        'bucket' => NULL,
         'url' => NULL,
         'endpoint' => NULL,
         'use_path_style_endpoint' => false,
@@ -399,7 +400,7 @@
     'default' => 'stack',
     'deprecations' => 
     array (
-      'channel' => NULL,
+      'channel' => 'null',
       'trace' => false,
     ),
     'channels' => 
@@ -572,7 +573,7 @@
   ),
   'queue' => 
   array (
-    'default' => 'database',
+    'default' => 'sync',
     'connections' => 
     array (
       'sync' => 
@@ -600,8 +601,8 @@
       'sqs' => 
       array (
         'driver' => 'sqs',
-        'key' => '',
-        'secret' => '',
+        'key' => NULL,
+        'secret' => NULL,
         'prefix' => 'https://sqs.us-east-1.amazonaws.com/your-account-id',
         'queue' => 'default',
         'suffix' => NULL,
@@ -638,8 +639,8 @@
     ),
     'ses' => 
     array (
-      'key' => '',
-      'secret' => '',
+      'key' => NULL,
+      'secret' => NULL,
       'region' => 'us-east-1',
     ),
     'resend' => 
@@ -657,7 +658,7 @@
   ),
   'session' => 
   array (
-    'driver' => 'database',
+    'driver' => 'file',
     'lifetime' => 120,
     'expire_on_close' => false,
     'encrypt' => false,
@@ -743,7 +744,7 @@
     'driver' => 'bcrypt',
     'bcrypt' => 
     array (
-      'rounds' => '12',
+      'rounds' => 12,
       'verify' => true,
       'limit' => NULL,
     ),
