@@ -6,15 +6,15 @@
   'app' => 
   array (
     'name' => 'Laravel',
-    'env' => 'local',
+    'env' => 'production',
     'debug' => true,
-    'url' => 'http://localhost',
+    'url' => 'https://gitpim-admin-production.up.railway.app',
     'frontend_url' => 'http://localhost:3000',
     'asset_url' => NULL,
     'timezone' => 'UTC',
-    'locale' => 'en',
-    'fallback_locale' => 'en',
-    'faker_locale' => 'en_US',
+    'locale' => 'fr',
+    'fallback_locale' => 'fr',
+    'faker_locale' => 'fr_FR',
     'cipher' => 'AES-256-CBC',
     'key' => 'base64:gzqohQPO7BkvQJP4ncnT0a+EiggXN6ee7HGlIDgkjpg=',
     'previous_keys' => 
@@ -211,6 +211,7 @@
       0 => 'api/*',
       1 => 'login',
       2 => 'logout',
+      3 => '*',
     ),
     'allowed_methods' => 
     array (
@@ -219,7 +220,6 @@
     'allowed_origins' => 
     array (
       0 => 'http://localhost:5173',
-      1 => 'https://ton-site.netlify.app',
     ),
     'allowed_origins_patterns' => 
     array (
@@ -232,7 +232,7 @@
     array (
     ),
     'max_age' => 0,
-    'supports_credentials' => false,
+    'supports_credentials' => true,
   ),
   'database' => 
   array (
@@ -258,7 +258,7 @@
         'port' => '35615',
         'database' => 'railway',
         'username' => 'root',
-        'password' => 'NTAPJnhDSLuTnkBRtcZIpXEaDhVTvfgA',
+        'password' => 'NTAPJnhDSLuTnkBRtcZIpXEaDhVTVfgA',
         'unix_socket' => '',
         'charset' => 'utf8mb4',
         'collation' => 'utf8mb4_unicode_ci',
@@ -278,7 +278,7 @@
         'port' => '35615',
         'database' => 'railway',
         'username' => 'root',
-        'password' => 'NTAPJnhDSLuTnkBRtcZIpXEaDhVTvfgA',
+        'password' => 'NTAPJnhDSLuTnkBRtcZIpXEaDhVTVfgA',
         'unix_socket' => '',
         'charset' => 'utf8mb4',
         'collation' => 'utf8mb4_unicode_ci',
@@ -298,7 +298,7 @@
         'port' => '35615',
         'database' => 'railway',
         'username' => 'root',
-        'password' => 'NTAPJnhDSLuTnkBRtcZIpXEaDhVTvfgA',
+        'password' => 'NTAPJnhDSLuTnkBRtcZIpXEaDhVTVfgA',
         'charset' => 'utf8',
         'prefix' => '',
         'prefix_indexes' => true,
@@ -313,7 +313,7 @@
         'port' => '35615',
         'database' => 'railway',
         'username' => 'root',
-        'password' => 'NTAPJnhDSLuTnkBRtcZIpXEaDhVTvfgA',
+        'password' => 'NTAPJnhDSLuTnkBRtcZIpXEaDhVTVfgA',
         'charset' => 'utf8',
         'prefix' => '',
         'prefix_indexes' => true,
@@ -370,7 +370,7 @@
       array (
         'driver' => 'local',
         'root' => 'C:\\xampp\\htdocs\\gite-pim-v2\\gitpim-admin\\storage\\app/public',
-        'url' => 'http://localhost/storage',
+        'url' => 'https://gitpim-admin-production.up.railway.app/storage',
         'visibility' => 'public',
         'throw' => false,
         'report' => false,
@@ -507,7 +507,7 @@
         'username' => NULL,
         'password' => NULL,
         'timeout' => NULL,
-        'local_domain' => 'localhost',
+        'local_domain' => 'gitpim-admin-production.up.railway.app',
       ),
       'ses' => 
       array (
